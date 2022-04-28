@@ -21,15 +21,18 @@ const StyledImage = styled.div `
 `
 const StyledContainer = styled.div `
   background-color: #fff;
-  padding: 30px;
+  padding: 30px 50px;
 
   @media (min-width: ${WIDTH_BREAK}) {
-    width: 100%;
-    min-width: calc(${WIDTH_BREAK} - 60px);
+    min-width: calc(${WIDTH_BREAK} - 100px);
   }
   @media (max-width: ${WIDTH_BREAK}) {
     width: 100%;
   }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 
 
