@@ -8,6 +8,7 @@ const StyledLabel = styled.p`
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 5px;
+  border-radius: 10px;
 `
 
 const StyledInput = styled.input`
