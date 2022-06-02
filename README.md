@@ -32,4 +32,3 @@ Para estilização e renderização das páginas é utilizado o StyledComponents
 # Banco de dados
 
 Eu estava preparando o sistema para implementação do banco de dados moongoDB, fazendo a conexão co front-end com o back-end
-# corelab-desafio
