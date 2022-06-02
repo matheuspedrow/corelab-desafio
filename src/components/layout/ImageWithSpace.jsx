@@ -11,7 +11,6 @@ const StyledImage = styled.div `
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-
   width: 100%;
   height: 100vh;
 
@@ -22,6 +21,7 @@ const StyledImage = styled.div `
 const StyledContainer = styled.div `
   background-color: ${props => props.theme.white};
   padding: 30px 50px;
+  margin-top: -30px;
 
   @media (min-width: ${WIDTH_BREAK}) {
     min-width: calc(${WIDTH_BREAK} - 100px);
@@ -55,7 +55,7 @@ function ImageWithSpace ({children, image}) {
 }
 
 ImageWithSpace.defaultProps = {
-  image: '/coffee-background.jpg'
+  image: '/car-background.jpg'
 }
 
 export default ImageWithSpace

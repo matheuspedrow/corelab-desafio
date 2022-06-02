@@ -1,9 +1,10 @@
 import Joi from 'joi'
 
-export const signupSchema = Joi.object({
-  firstName: Joi.string().required().max(50),
-  lastName: Joi.string().required().max(50),
-  user: Joi.string().required().max(30),
-  email: Joi.string().required({tlds: {allow: false} }).required().max(100),
-  password: Joi.string().required().max(50).min(6),
+export const addSchema = Joi.object({
+  marca: Joi.string().required().max(50),
+  cor: Joi.string().required().max(50),
+  ano: Joi.number().required().min(1900).max(2023),
+  maxPrice: Joi.number().required().min(0),
+  minPrice: Joi.number().required().min(0).max(Joi.ref('maxPrice')),
+  descricao: Joi.string().required().max(500),
 })

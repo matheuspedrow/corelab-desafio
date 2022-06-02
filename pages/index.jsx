@@ -1,60 +1,37 @@
 import styled from 'styled-components'
+import Link from 'next/link'
+import ImageWithSpace from "../src/components/layout/ImageWithSpace"
+import H1 from "../src/components/typography/H1.JSX"
+import H3 from "../src/components/typography/H3.JSX"
+import H4 from "../src/components/typography/H4.JSX"
+import Button from "../src/components/inputs/Button.jsx"
+import Input from "../src/components/inputs/Input.jsx"
 
-import Navbar from '../src/components/layout/Navbar'
-import Container from '../src/components/layout/Container'
-import CreatePost from '../src/components/cards/CreatePost'
-import H3 from '../src/components/typography/H3'
-import Post from '../src/components/cards/Post'
-
-
-const PostContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+const FormContainer = styled.div `
   margin-top: 20px;
 `
 
-
-const Content = styled.div `
-  margin: 50px 0;
-`
-
-const LastPostText = styled(H3)`
-  padding: 40px 0;
-`
-
-const RefreshPosts = styled.span`
-  font-weight: bold;
-  color: ${props => props.theme.primary};
-  cursor: pointer;
-`
-
-const RefreshPostContainer = styled.div`
-  text-align: center;
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  gap: 20px;
 `
 
 
-function HomePage () {
-  
+function SearchPage () {
   return (
-    <>
-    <Navbar />
-    <Content>
-      <Container>
-        <CreatePost />
-        <LastPostText>Últimas postagens:</LastPostText>
-        <RefreshPostContainer>
-          <RefreshPosts>Carregar novas postagens:</RefreshPosts>
-        </RefreshPostContainer>
-        <PostContainer>
-          <Post />
-          <Post />
-          <Post />
-        </PostContainer>
-      </Container>
-    </Content>
-    </>
+    <ImageWithSpace>
+      <H1>Pesquisar Veículos</H1>
+      <H3>Os melhores veículos estão aqui!</H3>
+      <FormContainer>
+        <Form>
+          <Input label="PESQUISAR" type="text" />
+          <Button><Link href="/addcar" ><H4>NOVO VEÍCULO</H4></Link></Button>
+        </Form>
+      </FormContainer>
+    </ImageWithSpace>
   )
 }
 
-export default HomePage
+export default SearchPage

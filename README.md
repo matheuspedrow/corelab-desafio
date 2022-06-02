@@ -1,27 +1,34 @@
-# social-dev
-Recriando o Twitter. 
+# Rodar o Projeto
 
-This is a Next.js project bootstrapped with create-next-app.
+utilize npm -i
+para instalar as dependencias do projeto e em seguida utilize npm run dev para inicializar.
 
-Getting Started
-First, run the development server:
+# Framework
 
-# npm run dev
-Open http://localhost:3000 with your browser to see the result.
+O projeto foi criado utilizando o framework Next.JS e ReactJS
 
-You can start editing the page by modifying pages/index.js. The page auto-updates as you edit the file.
+# Pages
+Está criado duas pages, onde uma delas é o index, no qual consiste em um layout um pouco mais interativo, ao lado esquerdo da tela está uma imagem no que consiste o projeto, e do direito o input e button, no qual, é utilizado o recurso do next, o next-link no button para dar melhor performance e desempenho na página.
 
-API routes can be accessed on http://localhost:3000/api/hello. This endpoint can be edited in pages/api/hello.js.
+Na página de addcar, consiste o formulário para adicionar carros, se mantendo a imagem do index a direita.
+É criado uma constante para armazenar os dados do formulário, bem como todas as informações necessárias para adicionalo a tela de carros adicionados.
 
-The pages/api directory is mapped to /api/*. Files in this directory are treated as API routes instead of React pages.
+Utiliza-se o React Hook-Form para criaçao do formulário.
 
-Learn More
-To learn more about Next.js, take a look at the following resources:
+Não finalizado ainda, mas já implementado, temos o joiResolver para válidação das informações inseridas no formulário
 
-Next.js Documentation - learn about Next.js features and API.
-Learn Next.js - an interactive Next.js tutorial.
-You can check out the Next.js GitHub repository - your feedback and contributions are welcome!
+# Theme
+
+Uso o recurso do theme para fazer toda configuração de cores do site.
+
+# Botões
+Estão padrozinados, utilizando o theme e colocando um pouco de efeito neles com o cursor pointer, hover e transition.
+
+# StyledComponents
+
+Para estilização e renderização das páginas é utilizado o StyledComponents.
 
 
+# Banco de dados
 
-
+Eu estava preparando o sistema para implementação do banco de dados moongoDB, fazendo a conexão co front-end com o back-end

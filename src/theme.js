@@ -1,10 +1,10 @@
 const theme = {
-  primary: '#8933CD',
-  primaryHover: '#7029A8',
-  inputBackgroundColor: '#F5F5F5',
+  primary: 'black',
+  primaryHover: 'rgba(1, 220, 199, 0.8);',
+  inputBackgroundColor: 'rgba(101, 220, 199, 0.3);',
   inputBorderColor: '#E6E6E6',
+  buttonBackgroundColor: 'rgba(101, 220, 199, 0.8);',
   background: '#ECECEC',
-  black: '#3A3A3A',
   white: '#FFFFFF',
 }
 

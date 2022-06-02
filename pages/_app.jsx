@@ -21,9 +21,6 @@ const Globalstyle = createGlobalStyle `
     transition: 0.5s;
   }
 
-  a:hover {
-    color: ${props => props.theme.primaryHover};
-  }
 `
 
 function App ({ Component, pageProps }) {

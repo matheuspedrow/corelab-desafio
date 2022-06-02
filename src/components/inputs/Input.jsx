@@ -15,10 +15,11 @@ const StyledLabel = styled.p`
 const StyledInput = styled.input`
   width: 100%;
   border: 1px solid ${props => props.theme.inputBorder};
-  background-color: ${props => props.theme.inputBackground};
-  padding: 15px 20px;
+  background-color: ${props => props.theme.inputBackgroundColor};
+  padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 10px;
+  font-size: 16px;
 `
 
 const Input = forwardRef(({ label, ...props }, ref) => {
