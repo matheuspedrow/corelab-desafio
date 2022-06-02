@@ -28,6 +28,10 @@ Estão padrozinados, utilizando o theme e colocando um pouco de efeito neles com
 
 Para estilização e renderização das páginas é utilizado o StyledComponents.
 
+# Responsividade
+
+Para deixar o projeto responsivo, tanto em desktop, laptops ou celulares e tablets, foi utilizado o recurso do @media
+
 
 # Banco de dados
 
